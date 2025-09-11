@@ -1,0 +1,178 @@
+:root {
+--bg-color: #f8f9fa;
+--text-color: #343a40;
+--primary-color: #007bff;
+--secondary-color: #6c757d;
+--accent-color: #28a745; /* Green for success/highlights */
+--toolbar-bg-start: #007bff;
+--toolbar-bg-end: #0056b3;
+--card-bg: #ffffff;
+--card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--bg-color);
+color: var(--text-color);
+line-height: 1.6;
+}
+.toolbar {
+position: fixed;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+background: linear-gradient(90deg, var(--toolbar-bg-start), var(--toolbar-bg-end));
+padding: 1rem 2rem;
+border-radius: 50px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+max-width: 1200px;
+}
+.toolbar-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+color: white;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.nav-links {
+display: flex;
+list-style: none;
+gap: 2rem;
+margin: 0;
+padding: 0;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+transition: all 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+background-color: rgba(255, 255, 255, 0.2);
+transform: translateY(-2px);
+}
+main.about-us {
+margin-top: 120px; /* Adjust for fixed toolbar */
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 1rem;
+}
+.hero-about {
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('contact2.png') no-repeat center center/cover;
+color: white;
+text-align: center;
+padding: 80px 20px;
+border-radius: 8px;
+margin-bottom: 2rem;
+box-shadow: var(--card-shadow);
+}
+.hero-about h1 {
+font-size: 3.5rem;
+margin-bottom: 1rem;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero-about p {
+font-size: 1.5rem;
+font-weight: 300;
+}
+section {
+background-color: var(--card-bg);
+padding: 40px;
+border-radius: 8px;
+margin-bottom: 2rem;
+box-shadow: var(--card-shadow);
+}
+section h2 {
+color: var(--primary-color);
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 2rem;
+}
+.our-mission p {
+font-size: 1.1rem;
+margin-bottom: 1rem;
+text-align: justify;
+}
+.values-grid, .team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+text-align: center;
+}
+.value-item h3 {
+color: var(--primary-color);
+margin-bottom: 0.8rem;
+}
+.team-member img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 1rem;
+border: 4px solid var(--primary-color);
+}
+.team-member h3 {
+margin-bottom: 0.5rem;
+color: var(--text-color);
+}
+.team-member p {
+color: var(--secondary-color);
+font-style: italic;
+}
+footer {
+text-align: center;
+padding: 1.5rem;
+background-color: var(--secondary-color);
+margin-top: 2rem;
+color: rgb(42, 40, 40);
+}
+/* Responsive adjustments for about */
+@media (max-width: 768px) {
+.toolbar {
+padding: 1rem;
+top: 10px;
+border-radius: 30px;
+}
+code
+Code
+.toolbar-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem; /* Reduced gap for smaller screens */
+}
+
+.nav-links a {
+    padding: 0.3rem 0.6rem; /* Smaller padding for links */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.logo {
+    font-size: 1.5rem; /* Smaller logo font size */
+}
+
+main.about-us {
+    margin-top: 90px; /* Adjust for smaller toolbar */
+}
+}

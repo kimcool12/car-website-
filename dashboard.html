@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | DriveEasy</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="toolbar-content">
+            <div class="logo">DriveEasy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="dashboard">
+        <section class="welcome">
+            <h1>Welcome back, olatunde</h1>
+            <p>Your rental dashboard</p>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="current-rental card">
+                <h2>Current Rental</h2>
+                <div class="rental-info">
+                    <img src="olatunde.webp" alt="Your Rental">
+                    <div>
+                        <h3>Toyota Corolla</h3>
+                        <p>Pickup: sep 10, 2025</p>
+                        <p>Return: Jan 20, 2026</p>
+                        <p>Status: <span class="status-active">Active</span></p>
+                    </div>
+                </div>
+                <button class="extend-btn">Extend Rental</button>
+            </section>
+
+            <section class="payment card">
+                <h2>Payment Summary</h2>
+                <div class="payment-details">
+                    <p>Total Due: <span>$175.00</span></p>
+                    <p>Due Date: Oct 18, 2025</p>
+                    <button class="pay-btn">Make Payment</button>
+                </div>
+            </section>
+
+            <section class="history card">
+                <h2>Rental History</h2>
+                <ul>
+                    <li>
+                        <span>Honda Civic</span>
+                        <span>Jan 10-15, 2025</span>
+                        <span>$150.00</span>
+                    </li>
+                    <li>
+                        <span>Ford Escape</span>
+                        <span>Aug 5-28, 2025</span>
+                        <span>$420.00</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DriveEasy Rentals</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
