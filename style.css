@@ -126,7 +126,7 @@ body {
     display: flex;
     align-items: center;
     color: var(--text-color-light);
-    text-align: left;
+    text-align: center;
 }
 
 
