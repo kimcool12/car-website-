@@ -5,3 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     feather.replace(); // Replace icons with Feather icons
 });
+
+window.addEventListener("load", () => {
+  document.body.header .backgroundImage = "url('indexp1.png')";
+});
