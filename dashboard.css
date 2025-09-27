@@ -29,31 +29,7 @@ background-color: var(--light-dashboard-bg);
 color: var(--text-dashboard-dark);
 transition: background-color 0.3s, color 0.3s;
 }
-/* Dark mode specific styles */
-body.dark-mode {
-background-color: var(--dark-mode-bg);
-color: var(--dark-mode-text);
-}
-body.dark-mode .card {
-background-color: var(--dark-mode-card-bg);
-box-shadow: var(--dark-mode-card-shadow);
-}
-body.dark-mode .toolbar {
-background: linear-gradient(50deg, var(--dark-mode-primary), var(--dark-mode-secondary));
-}
-body.dark-mode .toolbar .logo,
-body.dark-mode .toolbar .nav-links a {
-color: var(--dark-mode-text);
-}
-body.dark-mode .payment-details span {
-color: var(--dark-mode-primary);
-}
-body.dark-mode button {
-background: linear-gradient(135deg, var(--dark-mode-primary), var(--accent-dashboard-color));
-}
-body.dark-mode .theme-toggle {
-background: linear-gradient(135deg, var(--dark-mode-primary), var(--accent-dashboard-color));
-}
+
 /* Toolbar (Dashboard specific) */
 /* Toolbar (Dashboard specific) */
 .toolbar {

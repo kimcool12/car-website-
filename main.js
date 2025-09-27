@@ -9,3 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener("load", () => {
   document.body.header .backgroundImage = "url('indexp1.png')";
 });
+
+window.addEventListener("load", () => {
+  document.body.main.backgroundImage = "url('contact2.png')";
+});
+
